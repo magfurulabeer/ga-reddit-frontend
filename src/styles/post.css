@@ -1,0 +1,97 @@
+body {
+  background-color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+section.main-post {
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  padding-top: 30px;
+}
+
+section.main-post h1 {
+  text-align: left;
+}
+
+#comment-form {
+  font-family: 'Roboto', sans-serif;
+
+}
+#comment-form textarea {
+  width: 99%;
+  font-size: 14px;
+}
+
+#comment-form button {
+  width: 100%;
+  height: 35px;
+  border: none;
+  background-color: rgba(51,205,171,1.0);
+  margin-top: 20px;
+  color: white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+#comment-form button:hover {
+  background-color: rgba(51,205,171,0.7);
+}
+
+.comment-list {
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+.comment {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding: 10px;
+  align-items: flex-start;
+}
+
+.comment p {
+  flex: 1;
+}
+
+.remove-button {
+  height: 20px;
+  width: 20px;
+  background-image: url('../assets/trash-black.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  transition: 0.5s;
+}
+
+.remove-button:hover {
+  height: 20px;
+  width: 20px;
+  background-image: url('../assets/trash-red.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.comments-header h2 {
+  margin-bottom: 0;
+}
+
+.comments-header a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(52, 152, 219,1.0);
+}
+
+.selected {
+  font-weight: bold;
+  /* !important is not good practice but laziness... */
+  color: rgba(34, 131, 195, 1.0) !important;
+}
