@@ -192,7 +192,7 @@ api.getProfile = () => api.pup.get('/profiles').authenticated().fetch()
 **    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0c2RlckBzdXBlcmhlcm8uY29tIiwiZXhwIjoxNTY5NDUxNjMxLCJpYXQiOjE1Njk0MzM2MzF9.50d8VMMggDBuDGmiQc7on9CZnZ3Sj6qiLA1x19v2L2LiqbmSByqDHHXAuf10wq6nKtuPrL7ymKu4Rb8_Eesbqg"
 **  } 
 */
-api.login = (email, password) => api.pup.post('/users/login').withBody({ email, password }).fetch()
+api.login = (email, password) => api.pup.post('/users/login').withBody({ email, password, username: "username" }).fetch()
 
 
 /*
